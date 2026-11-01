@@ -34,3 +34,43 @@ FastApi-/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
+
+```
+
+## Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sjha-dev/FastApi-.git
+
+Navigate to the project directory
+cd FastApi
+
+Create a virtual environment
+python -m venv venv
+
+Activate the virtual environment
+Windows:   venv\Scripts\activate
+Linux / macOS:   source venv/bin/activate
+
+
+Install dependencies
+pip install -r requirements.txt
+
+
+Run the application
+uvicorn main:app --reload
+
+```
+
+## API Endpoints
+
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| GET | `/` | Welcome message |
+| GET | `/teas` | Retrieve all teas |
+| POST | `/teas` | Create a new tea |
+| PUT | `/teas/{tea_id}` | Update a tea by ID |
+| DELETE | `/teas/{tea_id}` | Delete a tea by ID |
